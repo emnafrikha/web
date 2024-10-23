@@ -1,0 +1,48 @@
+.project-title-container {
+	box-sizing: border-box; /* Ensure padding is included in the width/height */
+	padding: 20px; /* Add some padding for inner spacing */
+	background-color: #fff; /* Set a background color, adjust as needed */
+	border-radius: 8px; /* Round the corners slightly */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+	box-sizing: border-box; /* Ensure padding is included in the width/height */
+	margin-top: 20px;
+	h2 {
+		font-weight: 100;
+		font-size: 18px;
+		line-height: 1;
+	}
+}
+.about-us {
+	background-color: #f0f8e7; /* Un fond vert doux pour rappeler la nature */
+	border-radius: 15px;
+	padding: 20px;
+	text-align: center;
+	max-width: 600px;
+	margin: 20px auto;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us h1 {
+	color: #2d572c; /* Un vert foncé pour le titre */
+	font-size: 2em;
+	margin-bottom: 10px;
+  }
+  
+  .about-us p {
+	color: #4a4a4a; /* Un gris foncé pour le texte */
+	font-size: 1.2em;
+	line-height: 1.6;
+  }
+  
+  .about-us strong {
+	color: #388e3c; /* Un vert pour mettre en avant les parties importantes */
+  }
+  
+  .about-us p emoji {
+	font-size: 1.4em;
+  }
+  .about-us-image {
+	max-width: 250px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }

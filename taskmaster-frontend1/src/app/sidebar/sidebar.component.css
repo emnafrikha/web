@@ -1,0 +1,26 @@
+.sidebar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    height: 100vh; /* Full height */
+    background-color: #9fd4a8; /* Use your desired background color */
+    padding: 20px; /* Padding inside the sidebar */
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .sidebar li {
+    margin: 15px 0; /* Space between list items */
+  }
+  
+  .sidebar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color */
+    font-size: 18px; /* Adjust font size */
+  }
+  
+  .sidebar a:hover {
+    font-weight: bold; /* Change text weight on hover */
+  }
+  

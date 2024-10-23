@@ -1,0 +1,90 @@
+.navbar {
+  background-color: #6bbf80; /* Brighter pastel green */
+  padding: 1rem;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Smooth font with a modern touch */
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+  font-weight: 700; /* Makes the text bolder */
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Smooth and modern font */
+  text-transform: uppercase; /* Capitalizes the text for a stronger look */
+  letter-spacing: 2px; /* Adds space between letters for a more modern feel */
+  background: linear-gradient(90deg, #9fd4a8, #6bbf80); /* Gradient effect */
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-background-clip: text; /* Clips the background to the text */
+ 
+  animation: shine 3s ease-in-out infinite; /* Adds a gentle shining animation */
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.navbar .logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a shadow to the logo */
+  margin-right: 1rem;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Adjusted space between links */
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  border-radius: 20px; /* Rounded corners for a softer look */
+}
+
+.navbar .nav-links a:hover {
+  background-color: #f0f8ff; /* Light pastel blue background on hover */
+  color: #6bbf80; /* Changes text color on hover */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.navbar .nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #f0f8ff; /* Adds an underline to active links */
+}
+
+.navbar .nav-links .btn {
+  background-color: #fff;
+  color: #6bbf80;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: 2px solid #6bbf80;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-links .btn:hover {
+  background-color: #6bbf80;
+  color: #fff;
+  transform: translateY(-2px); /* Lift the button slightly on hover */
+}

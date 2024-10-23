@@ -1,0 +1,188 @@
+/* Modal Background */
+.modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+	transition: opacity 0.3s ease;
+	animation: fadeIn 0.3s ease forwards;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 15px; /* More rounded corners */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer, larger shadow */
+	max-width: 600px;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	animation: slideIn 0.4s ease forwards;
+	border: 1px solid #3498db; /* Adds a subtle blue border */
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+	from {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Form Styles */
+.modal-content form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-content form p {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #222;
+	text-align: center;
+}
+
+/* Form Field Styles */
+.modal-content form div {
+	margin-bottom: 20px;
+}
+
+/* Label Styles */
+.modal-content form label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+	color: #444;
+	font-size: 16px;
+}
+
+/* Input Styles */
+.modal-content form input {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus State for Input */
+.modal-content form input:focus {
+	outline: none;
+	border-color: #28a745; /* Green focus border */
+	box-shadow: 0 0 8px rgba(40, 167, 69, 0.5); /* Green shadow */
+}
+
+/* Button Container */
+.modal-content form div:last-child {
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px; /* Adds space between buttons */
+}
+
+/* Cancel Button Styles */
+.cancel-button {
+	padding: 12px 25px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	background-color: #f7f7f7;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cancel-button:hover {
+	background-color: #e6e6e6;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cancel-button:active {
+	background-color: #ccc;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button Styles */
+.submit-button {
+	padding: 12px 25px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #28a745; /* Green button */
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+	background-color: #218838; /* Darker green on hover */
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:active {
+	background-color: #1e7e34; /* Even darker green on click */
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button (X) */
+.modal-content .close-button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: none;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	color: #999;
+	transition: color 0.3s ease;
+}
+
+.modal-content .close-button:hover {
+	color: #555;
+}
+
+/* Date Styles with Emoji */
+.date-container {
+	font-size: 16px;
+	color: #444;
+	display: flex;
+	align-items: center;
+}
+
+.date-container::before {
+	content: "📅"; /* Emoji before the date */
+	margin-right: 8px;
+	font-size: 18px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+	.modal-content {
+		max-width: 90%;
+	}
+}

@@ -1,0 +1,109 @@
+.task-list-container {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #e6f7e5; /* Pastel green background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.heading h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e8b57; /* Dark green color */
+  font-family: 'Arial', sans-serif; /* Stylized font */
+  text-transform: uppercase; /* Capitalize the text */
+  letter-spacing: 2px; /* Add some letter spacing */
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+  border-bottom: 2px solid #2e8b57; /* Green border */
+  color: #2e8b57;
+}
+
+tbody td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #2e8b57; /* Green border */
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background-color: #f0f9f0; /* Slightly lighter green on hover */
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+tbody td:first-child label {
+  display: flex;
+  align-items: center;
+}
+
+tbody td:first-child label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.status-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #2e8b57; /* Green status dot */
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+td.due-date {
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2e8b57; /* Green button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #246947; /* Darker green on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  background-color: #1f5c3d; /* Even darker green on click */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}

@@ -1,0 +1,52 @@
+<div class="task-list-container">
+  <div class="heading">
+    <h3>Our team</h3>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>To do</th>
+        <th>date de naissance</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(task of tasks$ | async; track task.id) {
+      <tr>
+        <td>
+          <label [class.completed-task]="task.completed">
+            <input
+              type="checkbox"
+              aria-label="Select task"
+              [checked]="task.completed"
+              (click)="handleCheckbox(task.id)"
+            />{{ task.name }}
+          </label>
+        </td>
+        <td>
+          <span
+            class="status-dot"
+            [ngClass]="task.completed ? 'completed' : 'in-progress'"
+          ></span
+          >{{ task.completed ? "Completed" : "In Progress" }}
+        </td>
+        <td>{{ task.dueDate | date : "YYYY-MM-dd" }}</td>
+        <td (click)="updateTask(task)">🖋️</td>
+        <td (click)="deleteTask(task.id)">❎</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+
+  <div class="button-container">
+    <button (click)="addNewTask()">Add New Task</button>
+  </div>
+  @if(showModal) {
+  <app-task-form
+    (closePanel)="handleModalClose($event)"
+    [currentTask]="selectedTask"
+    [formType]="formType"
+  ></app-task-form>
+  }
+</div>
